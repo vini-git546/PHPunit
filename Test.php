@@ -28,7 +28,7 @@
        function selenium_login2($browser)
        {
           
-          $browser->open("http://184.164.156.56/projects/eltern_planner/admin/user/admin/login/"); 
+          $browser->open("http://projects/eltern_planner/admin/user/admin/login/"); 
           $browser->waitForPageToLoad(5000); 
           $browser->type("id=login_name", "admin");
           $browser->type("id=passwd","admin");
@@ -76,7 +76,7 @@
             function testMyTest()
             {
               $this->windowMaximize();
-              $this->open("http://184.164.156.56/projects/eltern_planner/admin/user/admin/login/");               
+              $this->open("http://projects/eltern_planner/admin/user/admin/login/");               
               $this->waitForPageToLoad(5000);               
               selenium_login1($this);
               selenium_login2($this);
