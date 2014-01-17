@@ -9,7 +9,7 @@ class WebTest extends PHPUnit_Extensions_SeleniumTestCase
         $this->setBrowserUrl('http://www.google.com/');
     }
  
-    public function testTitle()
+    public function test()
     {
         $this->open('http://www.google.com/');
         $this->windowMaximize;
