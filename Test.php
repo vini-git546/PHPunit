@@ -3,7 +3,7 @@
 
       // *******  Case 1: Valid User name and Invalid password *******
 
-       function selenium_login($browser)
+       function selenium_login1($browser)
 
         {
           
@@ -25,7 +25,7 @@
        // *******  Case 2: Valid User name and valid password *******
 
        
-       function selenium_login1($browser)
+       function selenium_login2($browser)
        {
           
           $browser->open("http://184.164.156.56/projects/eltern_planner/admin/user/admin/login/"); 
@@ -36,7 +36,7 @@
           $browser->click("id=button2");
           $browser->waitForPageToLoad(5000);
        }
-       function selenium_login2($browser)
+       function selenium_login3($browser)
        {
          $browser->open("http://www.google.co.in");
          $browser->waitForPageToLoad(3000);
@@ -78,9 +78,9 @@
               $this->windowMaximize();
               $this->open("http://184.164.156.56/projects/eltern_planner/admin/user/admin/login/");               
               $this->waitForPageToLoad(5000);               
-              selenium_login($this);
               selenium_login1($this);
               selenium_login2($this);
+              selenium_login3($this);
               //selenium_logout($this);
 
             }
